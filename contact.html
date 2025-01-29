@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <style>
+   
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #contact input, #contact textarea {
+      width: 100%;
+      max-width: 400px; /* Adjust the max-width for responsiveness */
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contact button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    #contact button:hover {
+      background-color: #45a049;
+    }
+
+    #contact textarea {
+      height: 150px; /* Increase the height of the message textarea */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MortalBubby's Cyber Corner</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="content.html">Content</a></li>
+      <li class="dropdown">
+        <span>About</span>
+        <ul class="submenu">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </li>
+      <li><a href="game_list.html">Game List</a></li>
+      <li><a href="terms_privacy.html">Policies and Terms</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div id="contact" class="section">
+      <center><h1>Contact Me</h1></center>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="text-align: center; margin-top: 40px;">Does Not Work Yet Sorry!</p>
+    </div>
+  </div>
+</body>
+</html>
